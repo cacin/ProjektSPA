@@ -1,0 +1,76 @@
+.service{
+    text-align: center;
+    padding-bottom: 20px;
+    .service-content{
+        @include flexbox;
+        
+        margin-top: 60px;
+        .service-item{
+            flex-basis: 100%;
+            justify-content: space-around;
+            position: relative;
+            margin: 10px;
+            img{
+                width: 100%;
+                object-fit: cover;
+            }       
+            }
+            .service-item-card{
+                background-color: #fff;
+                position: absolute;
+                left: 20px;
+                right: 20px;
+                margin: auto;
+                bottom: -50px;
+                text-align: center;
+                transition: all .5s;
+
+                &:hover{
+                    padding-bottom: 30px;
+                }
+                &:hover .service-social{
+                    height: 35px;
+                }
+                
+
+
+                .service-social{
+                    transition: all .5s;
+                    height: 0;
+                    overflow: hidden;
+                    a{
+                        height: 35px;
+                        width: 35px;
+                        font-size: 20px;
+                        display: inline-block;
+                        line-height: 35px;
+                        text-align: center;
+                        border: 1px solid $secondary-color;
+                        color: $secondary-color;
+                        border-radius: 50%;
+                        margin: 0 10px;
+
+                        &:hover{
+                            border-color: $primary-color;
+                            background-color: $primary-color;
+                            color: #fff;
+                            box-shadow: 0 5px 20px;
+                            height: 35px;
+                        }
+                    }
+                }
+
+            }
+        }
+    
+}
+
+@media screen and (min-width: $medium ){
+    .service{
+        .service-content{
+            .service-item{
+                flex-basis: 30%;
+            }
+        }
+    }
+}

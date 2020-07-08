@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    color: $primary-color-text;
+    font-family: $primary-font;
+}
+.container{
+    max-width: $small-container;
+    width: $small-container;
+    padding: 0 23px;
+    margin: 0 auto;
+    
+}
+.container-full{
+    max-width: $small-container;
+    width: $small-container;
+}
+
+section{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+@media all and (min-width: $large){
+    .container{
+        max-width: $large-container;
+    
+    }
+    h1{
+        font-size: 60px;
+    }
+}
+
+@media all and (min-width: $extra-large){
+    .container{
+        max-width: $extra-large-container;
+    }
+}
+
+
+.hide-element{
+    display: none;
+}

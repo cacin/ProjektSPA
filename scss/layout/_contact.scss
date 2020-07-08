@@ -1,0 +1,93 @@
+.contact{
+    background-color: $primary-color;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    h2{
+        color: #fff;
+        font-size: 55px;
+        font-weight: 700;
+    }
+    .blog-content{
+        font-weight: 300;
+    }
+    .contact-wraper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+        form{
+            @include forms;
+            padding-bottom: 15px;
+        }
+
+        .contact-item {
+            flex-basis: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            .contact-item-address {
+                flex-basis: 100%;
+               
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                padding: 30px;
+                img{
+                    padding-right: 30px;
+                   
+                    height: 40px;
+                    align-self: center;
+                }
+                address{
+                    align-self: center;
+                }
+                p{
+                    margin: 0;
+                }
+            }
+        }
+       
+
+        form.contact-form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-basis: 100%;
+            background-color: $primary-color;
+            input#contact-name {
+                flex-basis: 100%;
+            }
+            input#contact-email {
+                flex-basis: 100%;
+            }
+            textarea#visit-message {
+                flex-basis: 100%;
+            }
+            button{
+                padding: 10px 25px;
+                margin-left: 0;
+            }
+        }
+    }
+
+    @media screen and (min-width: $medium ){
+        .contact-wraper {
+            .contact-item{
+                flex-basis: 50%;
+                .contact-item-address {
+                img{
+                    height: 16px;
+                }
+            }
+            }
+            form.contact-form {
+                flex-basis: 50%;
+                input, textarea{
+                    border: none;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+%btn{
+    border: 1px solid;
+    text-decoration: none;
+    font-size: 14px;
+    background-color: $primary-color;
+    color: #fff;
+    text-transform: uppercase; 
+
+}
+%btn-squer{
+    @extend %btn;
+    padding: 12px 30px 12px 40px;
+      
+}
+
+
+
+.btn-oval{
+    @extend %btn;
+    border-radius: 30px;
+    padding: 24px 50px;
+}
+.btn-cards{
+    @extend %btn;
+    padding: 24px 50px;
+    border-radius: 30px;
+    background-color: $btn-color;
+    &:hover{
+        background-color: $primary-color;
+    }
+}
+
+.btn-form{
+    @extend %btn;
+    border-radius: 30px;
+    border-color: #fff;
+    padding: 24px;
+    background-color: #fff;
+    color: $secondary-color;
+    text-transform: none;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (min-width: $medium ){
+    .btn-cards{
+        padding: 15px 35px;
+    }
+    .btn-form{
+        padding: 18px 20px;
+    }
+}

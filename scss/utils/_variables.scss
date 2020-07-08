@@ -1,0 +1,31 @@
+/* Font */
+$first-font-menu: 50px;
+$primary-font: 'Roboto', sans-serif;
+$secondary-font: 'Bellota', sans-serif;
+
+$primary-color: #1ba4ce;
+$secondary-color: #473452;  
+$primary-color-text: #888888;
+$secondary-color-text: #555555;
+
+$btn-color: #30383b;    
+
+%font-bellota{
+    font-family: $secondary-font;
+    color: $secondary-color;
+    font-weight: 700;
+}
+
+/* Container */
+$small-container: 100%;
+$large-container: 960px;
+$extra-large-container: 1140px;
+
+/* breakpoint*/
+$xsmall: 480px;
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+
+

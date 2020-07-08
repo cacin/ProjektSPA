@@ -1,0 +1,14 @@
+.blog{
+    text-align: center;
+    .blog-date{
+        font-size: 18px;
+        font-weight: 300;
+    }
+    @media screen and (min-width: $medium ){
+        .blog-date{
+            font-size: 12px;
+            font-weight: 300;
+            color: $primary-color-text;
+        }
+    }
+}

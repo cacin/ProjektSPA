@@ -1,0 +1,42 @@
+.cards{
+    @include flexbox;
+    justify-content: space-around;
+    .cards-holder{
+        flex-basis: 100%;
+        margin: 15px;
+        @include flexbox;
+        width: 100px;
+        .cards-flex{
+            flex-basis: 100%;
+            padding: 30px;
+            border: 1px solid #e2e5ea;
+            width: 100%;
+            &:hover{
+               box-shadow:  0 5px 20px;
+            }
+            h3{
+                font-size: 33px;
+                color: $secondary-color;
+            }
+            img{
+                width: 100%;
+            }
+        }
+    }
+   
+}
+
+
+@media screen and (min-width: $medium ){
+    .cards{
+        .cards-holder{
+            flex-basis: 30%;
+            .cards-flex{
+                padding: 20px;
+                h3{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+}

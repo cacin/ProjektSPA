@@ -1,0 +1,96 @@
+.visit{
+   display: flex;
+    .visit-backround{
+        display: none;
+       img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       }
+    }
+
+    form{
+        background-color: $primary-color;
+        padding: 80px 40px;
+        @include flexbox;
+        justify-content: space-between;
+        textarea,#visit-tel,#visit-name,#visit-email,#visit-service{
+            flex-basis: 100%;
+        }
+        #visit-time, #visit-date{
+            flex-basis: 48%;
+            width: 100%;
+        }
+    
+      
+        input,textarea,select{
+            border: none;
+            border-bottom: 1px solid #fff;
+            color: #fff;
+            padding: 10px 0;
+            text-transform: uppercase;
+            option{
+                color: $secondary-color;
+                background-color: $primary-color;
+            }
+           
+            
+        }
+        ::placeholder{
+            color: #fff;
+            
+        }
+        :active{
+            border: none;
+            
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus {
+            border: none;
+            border-bottom: solid #fff;
+          -webkit-text-fill-color: white;
+          
+          
+          transition: background-color 5000s ease-in-out 0s;
+        }
+        *:focus{
+            outline: none;
+           
+        }
+        
+        
+        .form-filed{
+           background-color: transparent;
+       
+        }
+        div #visit-commit{
+            color: red;
+        }
+    }
+
+    @media all and (min-width: $medium){
+        .visit-backround{
+            display: block;
+            justify-content: flex-start;
+            flex-basis: 40%;
+        }
+        form{
+            flex-basis: 60%;
+            padding: 80px;
+            textarea{
+                flex-basis: 100%;
+            }
+            #visit-time, #visit-date,#visit-tel,#visit-name,#visit-email,#visit-service{
+                flex-basis: 48%;
+                width: 100%;
+            }
+        }
+    }
+}

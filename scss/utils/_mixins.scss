@@ -1,0 +1,56 @@
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+
+@mixin forms {
+        input,textarea,select{
+            
+            border: 1px solid #e2e5ea;
+            color: #fff;
+            padding: 20px 30px;
+            background-color: $primary-color;
+            font-weight: lighter;
+            text-transform: uppercase;
+            font-size: 20px;
+            margin: 11px 0;
+            
+
+            option{
+                color: $secondary-color;
+                background-color: $primary-color;
+            }
+                       
+        }
+        ::placeholder{
+            color: #fff;
+            
+        }
+        :active{
+            border: none;
+            
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus,
+        textarea:-webkit-autofill,
+        textarea:-webkit-autofill:hover,
+        textarea:-webkit-autofill:focus,
+        select:-webkit-autofill,
+        select:-webkit-autofill:hover,
+        select:-webkit-autofill:focus {
+            border: none;
+            border-bottom: solid #e2e5ea;
+          -webkit-text-fill-color: white;
+          
+          
+          transition: background-color 5000s ease-in-out 0s;
+        }
+        *:focus{
+            outline: none;
+        } 
+    
+    
+}   
